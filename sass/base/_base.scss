@@ -1,5 +1,13 @@
-html,body{
+body{
     background-color: tan;
-    font-size: 20px;
+      font-size: 24px;
+      font-family: 'Playfair Display', serif;
 }
 
+.container{
+    width: 100%;
+    max-width: 1142px;
+    margin: 0, 20px;
+    padding-left: 163px;
+    padding-right: 0;
+  }
