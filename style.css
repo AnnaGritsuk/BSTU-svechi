@@ -1,8 +1,9 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -25,7 +26,7 @@ ul, li {
 
 body {
   background-color: tan;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Playfair Display", serif;
 }
 
@@ -33,19 +34,33 @@ body {
   width: 100%;
   max-width: 1142px;
   margin: 0, 20px;
-  padding-left: 163px;
   padding-right: 0;
+  height: 57px;
 }
 
 .nav {
   padding-top: 0px;
-  padding-left: 20px;
+  background: url(../assets/png/шапка.png);
+  display: block;
+  width: 1024px;
+  margin-left: 163px;
 }
 
 .nav__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 57px;
+  margin-left: 15px;
+  margin-right: 20px;
+  width: 984px;
+  position: absolute;
+  padding-top: 3px;
+}
+
+.logo {
+  margin-top: 4px;
+  margin-left: 6px;
 }
 
 .nav_link {
@@ -63,8 +78,168 @@ body {
   color: black;
   font-family: "Playfair Display", serif;
   font-size: 24px;
+  line-height: 10px;
 }
 
 .navigation-list a:hover {
-  color: purple;
+  color: rgb(76, 0, 114);
+}
+
+.header {
+  background: url(../assets/png/главноефото.png);
+  max-width: 1142px;
+  margin-left: 163px;
+  margin-right: 162px;
+  height: 613px;
+}
+
+.header__row {
+  display: block;
+  align-items: center;
+}
+
+.header__title {
+  font-size: 64px;
+  font-family: "Viaoda Libre", cursive;
+  color: #FFFFFF;
+  line-height: 32px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.16em;
+  padding-top: 490px;
+}
+
+.header__subtitle {
+  color: #FFFFFF;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 21px;
+  letter-spacing: 0.21em;
+  line-height: 36px;
+  margin-left: 5px;
+}
+
+.delivery {
+  background-color: tan;
+  display: block;
+  max-width: 1024px;
+  margin-left: 163px;
+  height: 842px;
+}
+
+.line {
+  padding-left: 508px;
+  padding-top: 3px;
+}
+
+.delivery__title {
+  font-family: "Viaoda Libre", cursive;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.51em;
+  padding-top: 13px;
+  padding-left: 31px;
+  font-weight: 100;
+}
+
+.delivery__subtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 29px;
+  letter-spacing: 0.21em;
+  line-height: 36px;
+  margin-left: 5px;
+}
+
+.delyvery__img {
+  display: flex;
+  gap: 323px;
+  padding-left: 256px;
+  padding-top: 73px;
+}
+
+.delivery__blocks {
+  display: flex;
+  gap: 47px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.titleRB {
+  font-family: "Viaoda Libre", cursive;
+  font-size: 24px;
+  letter-spacing: 0.21em;
+  margin-left: 130px;
+  text-decoration: underline;
+}
+
+.descriptionRB {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  padding-top: 16px;
+  letter-spacing: 0.21em;
+  text-align: center;
+  font-weight: 400;
+  width: 375px;
+  margin-left: 119px;
+}
+
+.titleBrest {
+  font-family: "Viaoda Libre", cursive;
+  font-size: 24px;
+  letter-spacing: 0.21em;
+  text-decoration: underline;
+  margin-right: 2px;
+}
+
+.descriptionBrest {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  padding-top: 16px;
+  letter-spacing: 0.21em;
+  text-align: center;
+  font-weight: 400;
+  width: 375px;
+  padding-right: 7px;
+}
+
+.availability {
+  background-color: rgb(148, 83, 83);
+  display: block;
+  max-width: 1024px;
+  height: 980px;
+}
+
+.availability_line {
+  padding-left: 508px;
+  padding-top: 4px;
+}
+
+.availability__title {
+  font-family: "Viaoda Libre", cursive;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  padding-top: 13px;
+  padding-left: 21px;
+  font-weight: 100;
+}
+
+.button__container {
+  display: flex;
+  gap: 30px;
+  margin-left: 350px;
+  padding-top: 20px;
+}
+
+.button1 {
+  background-color: aqua;
 }/*# sourceMappingURL=style.css.map */

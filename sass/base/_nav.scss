@@ -1,14 +1,31 @@
 
 .nav{
     padding-top: 0px;
-    padding-left: 20px; 
+    background: url(../assets/png/шапка.png);
+    display: block;
+    width: 1024px;
+    margin-left: 163px;
+    
+    
+    
   }
 
   .nav__row{
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    height: 57px;
+    margin-left: 15px;
+    margin-right: 20px;
+    width: 984px;
+    position: absolute;
+    padding-top: 3px;
     
+  }
+
+  .logo{
+    margin-top: 4px;
+    margin-left: 6px;
   }
 
   .nav_link{
@@ -17,20 +34,24 @@
   }
 
   .navigation-list{
+    
     display: flex;
     gap: 32px;
     
   }
   
 .navigation-list a{
+  
 text-decoration: none;
 color:black;
 font-family: 'Playfair Display', serif;
 font-size: 24px;
+line-height: 10px;
+
 
 
 }
 
 .navigation-list a:hover{
-  color: purple;
+  color: rgb(76, 0, 114);
 }

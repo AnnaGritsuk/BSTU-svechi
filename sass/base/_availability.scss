@@ -1,0 +1,32 @@
+.availability{
+    background-color: rgb(148, 83, 83);
+    display: block;
+    max-width: 1024px;
+    height: 980px;
+}
+
+.availability_line{
+    padding-left: 508px;
+    padding-top: 4px;
+}
+
+.availability__title{
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.5em;
+    padding-top: 13px;
+    padding-left: 21px;
+    font-weight: 100;
+}
+
+.button__container {
+    display: flex;
+    gap: 30px;
+    margin-left: 350px;
+    padding-top: 20px;
+}
+
+.button1{
+    background-color: aqua;
+}
