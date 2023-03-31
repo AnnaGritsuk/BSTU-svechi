@@ -1,12 +1,4 @@
- //abstracts
 
- @import "./sass/abstracts/functions";
- @import "./sass/abstracts/mixins";
- @import "./sass/abstracts/placeholders";
- @import "./sass/abstracts/variables";  
-
-
- 
  //base
  @import "./sass/base/reset";  
  @import "./sass/base/base";
@@ -14,6 +6,7 @@
  @import "./sass/base/header";
  @import "./sass/base/delivery";
  @import "./sass/base/availability";
+ @import "./sass/base/video";
 
 
 
