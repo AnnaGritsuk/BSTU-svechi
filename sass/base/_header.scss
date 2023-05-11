@@ -1,6 +1,6 @@
 .header{
   background: url(../assets/png/главноефото.png); 
-  max-width: 1142px;
+  max-width: 1024px;
   margin-left: 163px;
   margin-right: 162px;
   height: 605px;
@@ -10,6 +10,9 @@
 .header__row{
     display: block;
     align-items: center;
+    img{
+      display: none;
+    }
 }
 
 
@@ -39,6 +42,38 @@
     line-height: 36px;
     margin-left: 5px;
 } 
+.header_img{
+  display: none;
+}
 
+@media screen and (max-width: 320px) {
+.header{
+  background: url(../assets/png/главное_фото_тел.png);
+  height: 366px;
+  max-width: 320px;
+}
+.header__text{
+  width: 254px;
+  left: 33px;
+  position: absolute;
+}
+.header__title{
+  padding-top: 219px;
+  font-weight: 400;
+font-size: 36px;
+line-height: 66.1%;
+text-align: center;
+letter-spacing: 0.16em;
+left: 33px;
+}
+.header__subtitle{
+  font-weight: 400;
+font-size: 16px;
+line-height: 66.1%;
+text-align: center;
+letter-spacing: 0.16em;
+}
+
+}
 
 

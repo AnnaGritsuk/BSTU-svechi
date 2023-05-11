@@ -7,10 +7,17 @@ body{
 
 .container{
     width: 100%;
-    max-width: 1142px;
+    max-width: 1024px;
     margin: 0, 20px;
     justify-content: center;
     align-items: center;
     padding-right: 0;
     height: 57px;
+  }
+
+  @media screen and (max-width:320px) {
+    .container{
+    max-width: 320px;
+    height: 42px;
+    }
   }
