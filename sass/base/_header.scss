@@ -1,0 +1,79 @@
+.header{
+  background: url(../assets/png/главноефото.png); 
+  max-width: 1024px;
+  margin-left: 163px;
+  margin-right: 162px;
+  height: 605px;
+}
+
+
+.header__row{
+    display: block;
+    align-items: center;
+    img{
+      display: none;
+    }
+}
+
+
+.header__title{
+    font-size: 64px;
+    font-family: 'Viaoda Libre', cursive;
+    color: #FFFFFF;
+    line-height: 32px;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.16em;
+    padding-top: 490px;
+    
+}
+
+.header__subtitle {
+  color: #FFFFFF;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 21px;
+  letter-spacing: 0.21em;
+    line-height: 36px;
+    margin-left: 5px;
+} 
+.header_img{
+  display: none;
+}
+
+@media screen and (max-width: 320px) {
+.header{
+  background: url(../assets/png/главное_фото_тел.png);
+  height: 366px;
+  max-width: 320px;
+}
+.header__text{
+  width: 254px;
+  left: 33px;
+  position: absolute;
+}
+.header__title{
+  padding-top: 219px;
+  font-weight: 400;
+font-size: 36px;
+line-height: 66.1%;
+text-align: center;
+letter-spacing: 0.16em;
+left: 33px;
+}
+.header__subtitle{
+  font-weight: 400;
+font-size: 16px;
+line-height: 66.1%;
+text-align: center;
+letter-spacing: 0.16em;
+}
+
+}
+
+

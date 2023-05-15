@@ -1,0 +1,23 @@
+body{
+    background-color: tan;
+      font-size: 20px;
+      font-family: 'Playfair Display', serif;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0, 20px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+    height: 57px;
+  }
+
+  @media screen and (max-width:320px) {
+    .container{
+    max-width: 320px;
+    height: 42px;
+    }
+  }

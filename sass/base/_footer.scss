@@ -1,0 +1,38 @@
+.footer{
+    background-color: black;
+    height: 143px;
+    width: 1024px;
+}
+
+.footer__inform{
+    font-family: 'Inter', sans-serif;
+    color: white; 
+    display: flex;
+    gap: 89px;
+    
+}
+
+.text__left{
+
+background-color: rgb(0, 0, 0);
+font-size: 12px;
+width: 350px;
+padding-left: 60px;
+padding-top: 32px;
+letter-spacing: 0.07em;
+
+}
+
+.text__center{
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.07em;
+    padding-top: 62px; 
+}
+
+.social__network{
+    display: flex;
+    gap: 10px;
+    padding-left: 112px;
+    padding-top: 56px;
+}

@@ -1,0 +1,627 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+}
+
+input, button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+body {
+  background-color: tan;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0, 20px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0;
+  height: 57px;
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 320px;
+    height: 42px;
+  }
+}
+.nav {
+  padding-top: 0px;
+  background: url(../assets/png/шапка.png);
+  display: block;
+  width: 100%;
+  margin-left: 163px;
+  max-width: 1024px;
+}
+
+.nav__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 57px;
+  margin-left: 15px;
+  margin-right: 20px;
+  width: 984px;
+  position: absolute;
+  padding-top: 3px;
+}
+
+.logo {
+  margin-top: 4px;
+  margin-left: 6px;
+}
+.logo .logo:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #3a7999;
+  box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+.menu-btn {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .menu-btn {
+    display: block;
+  }
+}
+
+.nav_link {
+  color: black;
+  text-decoration: none;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 32px;
+}
+@media screen and (max-width: 767px) {
+  .navigation-list {
+    position: fixed;
+    visibility: hidden;
+    flex-direction: column;
+    top: 0px;
+    right: -300px;
+    width: 218px;
+    height: 100%;
+    margin: 0;
+    padding: 30px 20px;
+    background-color: rgb(114, 82, 59);
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2);
+    transition-duration: 3s;
+  }
+}
+
+.navigation-list a {
+  text-decoration: none;
+  color: black;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  line-height: 10px;
+}
+
+.navigation-list a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: -310px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition-duration: 0.25s;
+}
+
+.menu-btn > span::before {
+  content: "";
+  top: -8px;
+}
+
+.menu-btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+#menu-toggle {
+  opacity: 0;
+}
+
+#menu-toggle:checked ~ .menu-btn > span {
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked ~ .menu-btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu-toggle:checked ~ .menu-btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu-toggle:checked ~ .navigation-list {
+  visibility: visible;
+  right: 0px;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+@media screen and (max-width: 320px) {
+  .nav__row {
+    width: 320px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 42px;
+  }
+  .nav {
+    margin-left: 0px;
+  }
+  .logo img {
+    width: 43px;
+    height: 38px;
+  }
+}
+.header {
+  background: url(../assets/png/главноефото.png);
+  max-width: 1024px;
+  margin-left: 163px;
+  margin-right: 162px;
+  height: 605px;
+}
+
+.header__row {
+  display: block;
+  align-items: center;
+}
+.header__row img {
+  display: none;
+}
+
+.header__title {
+  font-size: 64px;
+  font-family: "Viaoda Libre", cursive;
+  color: #FFFFFF;
+  line-height: 32px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.16em;
+  padding-top: 490px;
+}
+
+.header__subtitle {
+  color: #FFFFFF;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 21px;
+  letter-spacing: 0.21em;
+  line-height: 36px;
+  margin-left: 5px;
+}
+
+.header_img {
+  display: none;
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    background: url(../assets/png/главное_фото_тел.png);
+    height: 366px;
+    max-width: 320px;
+  }
+  .header__text {
+    width: 254px;
+    left: 33px;
+    position: absolute;
+  }
+  .header__title {
+    padding-top: 219px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 66.1%;
+    text-align: center;
+    letter-spacing: 0.16em;
+    left: 33px;
+  }
+  .header__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 66.1%;
+    text-align: center;
+    letter-spacing: 0.16em;
+  }
+}
+.delivery {
+  background-color: tan;
+  display: block;
+  max-width: 1024px;
+  margin-left: 163px;
+  height: 842px;
+}
+
+.line {
+  padding-left: 508px;
+  padding-top: 3px;
+}
+
+.delivery__title {
+  font-family: "Viaoda Libre", cursive;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.51em;
+  padding-top: 12px;
+  padding-left: 31px;
+  font-weight: 100;
+  opacity: 0.5;
+}
+
+.delivery__subtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 29px;
+  letter-spacing: 0.21em;
+  line-height: 36px;
+  margin-left: 5px;
+}
+
+.delyvery__img {
+  display: flex;
+  gap: 323px;
+  padding-left: 256px;
+  padding-top: 73px;
+}
+
+.delivery__blocks {
+  display: flex;
+  gap: 47px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.titleRB {
+  font-family: "Viaoda Libre", cursive;
+  font-size: 24px;
+  letter-spacing: 0.21em;
+  margin-left: 130px;
+  text-decoration: underline;
+}
+
+.descriptionRB {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  padding-top: 16px;
+  letter-spacing: 0.21em;
+  text-align: center;
+  font-weight: 400;
+  width: 375px;
+  margin-left: 119px;
+}
+
+.titleBrest {
+  font-family: "Viaoda Libre", cursive;
+  font-size: 24px;
+  letter-spacing: 0.21em;
+  text-decoration: underline;
+  margin-right: 2px;
+}
+
+.descriptionBrest {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  padding-top: 16px;
+  letter-spacing: 0.21em;
+  text-align: center;
+  font-weight: 400;
+  width: 375px;
+  padding-right: 7px;
+}
+
+.availability {
+  background-color: tan;
+  display: block;
+  max-width: 1024px;
+  height: 980px;
+}
+
+.availability_line {
+  padding-left: 508px;
+  padding-top: 4px;
+}
+
+.availability__title {
+  font-family: "Viaoda Libre", cursive;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  padding-top: 13px;
+  padding-left: 21px;
+  font-weight: 100;
+  opacity: 0.5;
+}
+
+.button__container {
+  display: flex;
+  gap: 109px;
+  margin-left: 245px;
+  padding-top: 33px;
+}
+
+.button {
+  background: url(../assets/png/кнопка.png);
+  width: 213px;
+  height: 55.92px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+  color: black;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #000000;
+  box-shadow: inset 0 0 0 3px #000000;
+  border-radius: 20px;
+}
+
+.container__tovary {
+  display: block;
+}
+
+.tovary {
+  padding-left: 218px;
+  padding-top: 43px;
+  display: block;
+}
+
+.tovary1riad {
+  display: flex;
+  width: 588px;
+  height: 252px;
+  gap: 15px;
+}
+
+.tovary2riad {
+  display: flex;
+  width: 588px;
+  height: 252px;
+  gap: 15px;
+  margin-top: 13px;
+}
+
+.button__strelki {
+  display: flex;
+  gap: 36px;
+  padding-top: 12px;
+  padding-left: 226px;
+}
+
+.button__left:hover {
+  background: rgb(255, 255, 255);
+  color: #fffcfc;
+  border-radius: 50px;
+  padding-top: 2px;
+  height: 54px;
+}
+
+.button__right:hover {
+  background: rgb(255, 255, 255);
+  color: #fffcfc;
+  border-radius: 50px;
+  padding-top: 2px;
+  height: 54px;
+}
+
+.video {
+  background-color: tan;
+  display: block;
+  max-width: 1024px;
+  height: 800px;
+}
+
+.line__v {
+  padding-left: 508px;
+}
+
+.video__t {
+  font-family: "Viaoda Libre", cursive;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  padding-top: 9px;
+  padding-left: 21px;
+  font-weight: 100;
+  opacity: 0.5;
+}
+
+.video__vstavka {
+  padding-top: 50px;
+  padding-left: 64px;
+}
+
+.price {
+  max-width: 1024px;
+  background-color: tan;
+  height: 900px;
+}
+
+.line {
+  padding-top: 11px;
+}
+
+.price__title {
+  font-family: "Viaoda Libre", cursive;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  padding-top: 5px;
+  padding-left: 21px;
+  font-weight: 100;
+  opacity: 0.5;
+}
+
+.price__container {
+  margin-left: 20px;
+  display: flex;
+  padding-top: 52px;
+}
+
+.price2 {
+  margin-left: 3px;
+}
+
+.price3 {
+  margin-left: 3px;
+}
+
+.button__price {
+  margin-left: 358px;
+  margin-top: 48px;
+  width: 315px;
+  height: 59px;
+}
+
+.feedback__container {
+  max-width: 1024px;
+  height: 725px;
+  background: url(../assets/png/фонfeedback.png);
+  margin-top: 18px;
+}
+
+.feedback__title {
+  padding-left: 321px;
+  padding-top: 255px;
+}
+
+.feedback__field {
+  padding-top: 81px;
+  padding-left: 237px;
+  display: flex;
+  gap: 1px;
+}
+
+.information {
+  position: absolute;
+}
+
+input[type=text] {
+  background: rgba(0, 0, 0, 0);
+  width: 180px;
+  text-align: center;
+  position: relative;
+  padding-left: 10px;
+}
+
+.vvod {
+  display: block;
+}
+
+.name {
+  padding-left: 335px;
+  padding-top: 4px;
+}
+
+.mail {
+  padding-left: 335px;
+  padding-top: 45px;
+}
+
+.tel {
+  padding-left: 335px;
+  padding-top: 35px;
+}
+
+input[type=submit] {
+  background: rgb(0, 0, 0);
+  font-family: "Playfair Display", serif;
+  color: white;
+  border-radius: 30px;
+  width: 181px;
+  height: 52px;
+  font-size: 25px;
+}
+
+.send {
+  padding-left: 180px;
+  padding-top: 35px;
+}
+
+.footer {
+  background-color: black;
+  height: 143px;
+  width: 1024px;
+}
+
+.footer__inform {
+  font-family: "Inter", sans-serif;
+  color: white;
+  display: flex;
+  gap: 89px;
+}
+
+.text__left {
+  background-color: rgb(0, 0, 0);
+  font-size: 12px;
+  width: 350px;
+  padding-left: 60px;
+  padding-top: 32px;
+  letter-spacing: 0.07em;
+}
+
+.text__center {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.07em;
+  padding-top: 62px;
+}
+
+.social__network {
+  display: flex;
+  gap: 10px;
+  padding-left: 112px;
+  padding-top: 56px;
+}/*# sourceMappingURL=style.css.map */
