@@ -1,31 +1,37 @@
 const tovars = {
     tovar1: [
-      'https://damion.club/uploads/posts/2022-02/1645031929_36-damion-club-p-krasivie-zimnie-kartinki-priroda-40.jpg',
-      'https://gagaru.club/uploads/posts/2023-02/1676708280_gagaru-club-p-zimnie-peizazhi-krasivie-kartini-krasivo-6.jpg',
-      'https://proprikol.ru/wp-content/uploads/2019/12/krasivye-kartinki-pro-zimu-62.jpg'
+      '/assets/jpg/товар1.jpg',
+      '/assets/jpg/товар2.jpg',
+      '/assets/jpg/товар3.jpg',
+      '/assets/jpg/товар4.jpg',
+      '/assets/jpg/товар5.jpg',
+      '/assets/jpg/товар6.jpg'
     ],
     tovar2: [
-      'https://mirpozitiva.ru/wp-content/uploads/2019/11/1478782975_ptichka_sakura.jpg',
-      'https://uprostim.com/wp-content/uploads/2021/04/image034-4.jpg',
-      'https://vsegda-pomnim.com/uploads/posts/2022-04/1649130823_61-vsegda-pomnim-com-p-krasivaya-vesennyaya-priroda-foto-71.jpg'
+        '/assets/jpg/товар7.jpg',
+        '/assets/jpg/товар8.jpg',
+        '/assets/jpg/товар9.jpg',
+        '/assets/jpg/товар10.jpg',
+        '/assets/jpg/товар11.jpg',
+        '/assets/jpg/товар12.jpg'
     ]
   }
   
   
   function changeImage (event) {
-    const season = event.target.dataset.season;
-    const seasonImages = document.querySelector('.photo__image').children;
-    Array.from(seasonImages).forEach((image, index) => image.src = seasons[season][index]);
+    const tovar = event.target.dataset.tovar;
+    const tovarImages = document.querySelector('.tovary1riad').children;
+    Array.from(tovarImages).forEach((image, index) => image.src = tovars[tovar][index]);
     // Array.from(seasonImages).forEach((image, index) => image.src = './assets/seasons/' + season + '/' + (index + 1) + '.jpg');
     
-    const buttons = document.querySelector('.photo__buttons').children;
-    Array.from(buttons).forEach(button => {
-      if (button.dataset.season == season) {
-        button.classList.add('button_color');
-      } else {
-        button.classList.remove('button_color');
-      };
-    });
+    const buttons = document.querySelector('.button__container').children;
+    // Array.from(buttons).forEach(button => {
+    //   if (button.dataset.tovar == tovar) {
+    //     button.classList.add('button_color');
+    //   } else {
+    //     button.classList.remove('button_color');
+    //   };
+    // });
     
   };
   
@@ -35,4 +41,4 @@ const tovars = {
     };
   };
   
-  document.querySelector('.photo__buttons').addEventListener('click', buttonClick);
+  document.querySelector('.button__container').addEventListener('click', buttonClick);

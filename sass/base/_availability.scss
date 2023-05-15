@@ -60,18 +60,12 @@ display: block;
 .tovary1riad{
     display: flex;
     width: 588px;
-    height: 252px;
+    //height: 252px;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
-.tovary2riad{
-    display: flex;
-    width: 588px;
-    height: 252px;
-    gap: 15px;
-    margin-top: 13px;
 
-}
 
 .button__strelki{
 display: flex;
