@@ -1,19 +1,19 @@
 const tovars = {
     tovar1: [
-      '/assets/jpg/товар1.jpg',
-      '/assets/jpg/товар2.jpg',
-      '/assets/jpg/товар3.jpg',
-      '/assets/jpg/товар4.jpg',
-      '/assets/jpg/товар5.jpg',
-      '/assets/jpg/товар6.jpg'
+      './assets/jpg/товар1.jpg',
+      './assets/jpg/товар2.jpg',
+      './assets/jpg/товар3.jpg',
+      './assets/jpg/товар4.jpg',
+      './assets/jpg/товар5.jpg',
+      './assets/jpg/товар6.jpg'
     ],
     tovar2: [
-        '/assets/jpg/товар7.jpg',
-        '/assets/jpg/товар8.jpg',
-        '/assets/jpg/товар9.jpg',
-        '/assets/jpg/товар10.jpg',
-        '/assets/jpg/товар11.jpg',
-        '/assets/jpg/товар12.jpg'
+        './assets/jpg/товар7.jpg',
+        './assets/jpg/товар8.jpg',
+        './assets/jpg/товар9.jpg',
+        './assets/jpg/товар10.jpg',
+        './assets/jpg/товар11.jpg',
+        './assets/jpg/товар12.jpg'
     ]
   }
   
