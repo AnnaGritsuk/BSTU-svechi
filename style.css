@@ -392,7 +392,7 @@ body {
 }
 
 .button {
-  background: url(../assets/png/кнопка.png);
+  background: url(./assets/png/кнопка.png);
   width: 213px;
   height: 55.92px;
   text-decoration: none;
@@ -447,7 +447,7 @@ body {
   position: absolute;
   justify-content: space-between;
   width: 100%;
-  top: calc(50% - 10px);
+  top: calc(50% - 26px);
   z-index: 2;
   opacity: 0;
   transition: all 2s;
@@ -570,7 +570,7 @@ body {
 .feedback__container {
   max-width: 1024px;
   height: 725px;
-  background: url(../assets/png/фонfeedback.png);
+  background: url(./assets/png/фонfeedback.png);
   margin-top: 18px;
 }
 
