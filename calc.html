@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&family=Viaoda+Libre&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__row">
+    
+                <div class="logo">
+                   <a href="index.html"> <img src="./assets/svg/логотип.svg" alt="Logo"></a> 
+                </div>
+                <input id="menu-toggle" type="checkbox">
+                <label class="menu-btn" for="menu-toggle">
+                <span></span>
+                </label>
+                <ul class="navigation-list">                  
+                            
+                               <li><a class="nav_link" href="#dostavka">Доставка</a></li>
+                               <li><a class="nav_link" href="#availability">Наличие</a></li>
+                               <li><a class="nav_link" href="#video">Видео</a></li>
+                               <li><a class="nav_link" href="#ceni">Цены</a></li>
+                               <li><a class="nav_link" href="#kontacti">Контакты</a></li>                               
+                </ul>  
+                            
+            </div>
+        </div>
+    </nav>
+<div class="cantainer_calc">
+    <h1 class="delivery__title">ВАШ ЗАКАЗ</h1>
+    <div class="calc_img_row">
+        <div class="calc1">
+            <div class="calc_but_row">
+            <button class="calc_but calc1" id="btnMinusF">-</button>
+            <input class="calc_int" type="text" value="0" id="intF">
+            <button class="calc_but calc1" id="btnPlusF">+</button>
+        </div>
+           <img src="./assets/jpg/калькулятор1.png" alt="1">
+        </div>
+        <div class="calc1">
+                <div class="calc_but_row2">
+                <button class="calc_but calc1" id="btnMinusK">-</button>
+                <input class="calc_int" type="text" value="0" id="intK">
+                <button class="calc_but calc1" id="btnPlusK">+</button>
+            </div>
+           <img src="./assets/jpg/калькулятор2.png" alt="2">
+        </div>
+    </div>
+    <div class="total">
+        <div class="total_row">
+            <h1 class="total__title">Итого к оплате</h1>
+            <button class="button button_tot" data-tovar="tovar1">РАССЧИТАТЬ</button>
+        </div>
+        <div class="total_sum">
+            <h1 class="total__title_sum" id="Price">0 BYN</h1>
+        </div>
+    </div>
+</div>
+
+    <div class="delivery_calc">
+        <div class="footer">
+
+            <div class="footer__inform">
+                    <div class="text__left">
+                        <p>Телефон: +375(33)111-11-11</p>
+                        <p>E-mail: candlehome@gmail.com</p>
+                        <p>Адрес: г.Брест, ул.Брестская 21, 224000</p>
+                        <p>GitHub</p>
+                        <p>Figma</p>
+                        <p>Грицюк Анна Александровна, ЭМ-3</p>
+                    </div>
+
+                    <div class="text__center">
+                        <p>© 2023 CandleHome</p>
+                    </div>
+
+                    <div class="social__network">
+                        <a href="https://www.instagram.com/spcandle/"><img src="/assets/png/инст.png" alt="inst"></a>
+                        <a href="WhatsApp"><img src="./assets/png/ватсап.png" alt="watsapp"></a>
+                        <a href="VK"><img src="./assets/png/вк.png" alt="vk"></a>
+                        <a href="YouTube"><img src="./assets/png/ютуб.png" alt="youtube"></a>
+                        <a href="Telegram"><img src="./assets/png/телега.png" alt="telegram"></a>
+                    </div>
+            </div>
+
+    </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>

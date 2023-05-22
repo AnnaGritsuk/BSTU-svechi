@@ -1,0 +1,67 @@
+.feedback__container{
+    max-width: 1024px;
+    height: 725px;
+    background: url(../assets/png/фонfeedback.png);
+    margin-top: 18px;
+}
+
+
+
+.feedback__title{
+    padding-left: 321px;
+    padding-top: 255px;
+}
+
+.feedback__field{
+    padding-top: 81px;
+    padding-left: 237px;
+   display: flex;
+   gap: 1px;
+}
+
+.information{
+    position: absolute;
+}
+
+input[type=text]{
+    background: rgba(0, 0, 0, 0);
+    width: 180px;
+    text-align: center;
+    position: relative;
+    padding-left: 10px;
+}
+
+.vvod{
+    display: block;
+}
+
+.name{
+    padding-left: 335px;
+    padding-top: 4px;
+}
+
+.mail{
+    padding-left: 335px;
+    padding-top: 45px;
+}
+
+.tel{
+    padding-left: 335px;
+    padding-top: 35px;
+}
+input[type=submit]{
+    background: rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+    color: white;
+    border-radius: 30px;
+    width: 181px;
+    height: 52px;
+    font-size: 25px;
+
+}
+
+.send{
+    padding-left: 180px;
+    padding-top: 35px;
+    
+}

@@ -1,0 +1,92 @@
+.delivery{
+    background-color: tan;
+    display: block;
+    max-width: 1024px;
+    margin-left: 163px;
+    height: 842px;
+  }
+
+
+  .line{
+   padding-left: 508px;
+   padding-top: 3px;
+}
+
+.delivery__title{
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.51em;
+    padding-top: 12px;
+    padding-left: 31px;
+    font-weight: 100;
+    opacity: 0.5;
+     
+}
+
+.delivery__subtitle{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 29px;
+    letter-spacing: 0.21em;
+      line-height: 36px;
+      margin-left: 5px;
+}
+  
+.delyvery__img{
+    display: flex;
+    gap: 323px;
+    padding-left: 256px;
+    padding-top: 73px;
+}
+
+.delivery__blocks{
+    display: flex;
+    gap: 47px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+
+
+.titleRB{
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 24px;
+    letter-spacing: 0.21em;
+    margin-left: 130px;
+
+    text-decoration: underline;
+}
+
+.descriptionRB{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    padding-top: 16px;
+    letter-spacing: 0.21em;
+    text-align: center;
+    font-weight: 400;
+    width: 375px;
+    margin-left: 119px;
+}
+
+.titleBrest{
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 24px;
+    letter-spacing: 0.21em;
+    text-decoration: underline;
+    margin-right: 2px;
+}
+
+.descriptionBrest{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    padding-top: 16px;
+    letter-spacing: 0.21em;
+    text-align: center;
+    font-weight: 400;
+    width: 375px;
+padding-right: 7px;
+}
