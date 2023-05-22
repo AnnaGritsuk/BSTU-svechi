@@ -50,35 +50,49 @@ display: block;
 }
 
 .tovary{
-    padding-left: 218px;
-    padding-top: 43px;
+    margin-left: 218px;
+    margin-top: 43px;
     display: block;
-    
-    
+    position: relative;
+  height: 512px;
+  width: 588px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .tovary1riad{
     display: flex;
-    width: 588px;
-    height: 252px;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+    justify-content: space-around;
+    img {
+        height: 252px;
+      }
 }
-
-.tovary2riad{
+.slider {
     display: flex;
-    width: 588px;
-    height: 252px;
-    gap: 15px;
-    margin-top: 13px;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    transition-duration: 3s;
+  }
 
-}
 
 .button__strelki{
-display: flex;
-gap: 36px;
-padding-top: 12px;
-padding-left: 226px;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  top: calc(50% - 10px);
+  
+  z-index: 2;
+  opacity: 0;
+  transition: all 2s;
 
+  .slider:hover + &, &:hover {
+    opacity: 1;
+  }
 }
 .button__left:hover{
     background: rgb(255, 255, 255);
@@ -94,3 +108,30 @@ padding-left: 226px;
     padding-top: 2px;
     height: 54px;
 }
+.move_left {
+    animation-name: move_left;
+    animation-duration: 2s;
+  }
+  
+  @keyframes move_left { 
+    0% { 
+      left: -100%;
+    } 
+    100% {
+      left: -200%;
+    } 
+  }
+  
+  .move_right {
+    animation-name: move_right;
+    animation-duration: 2s;
+  }
+  
+  @keyframes move_right { 
+    0% { 
+      left: -100%;
+    } 
+    100% {
+      left: 0%;
+    } 
+  }
